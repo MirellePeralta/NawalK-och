@@ -246,5 +246,48 @@ button {
         border: none;
         cursor: pointer;
       }
-
+    
+/* Estilos para el contenedor de resultados */
+#result-container {
+    margin-top: 1320px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+  /* Resto de los estilos para la sección de resultados */
+  .results {
+    /* Agrega cualquier otro estilo necesario para la sección de resultados */
+  }
+  
+  /* Estilos para la tabla de noticias (puedes ajustar según tus necesidades) */
+  #newsListTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  /* Estilos para los encabezados de la tabla de noticias */
+  #newsListTable th {
+    font-family: 'Montserrat', sans-serif;
+    color: #EA861E; /* Puedes cambiar este color según tus preferencias */
+  }
+  
+  /* Estilos para la lista de enlaces (puedes ajustar según tus necesidades) */
+  #linksList {
+    list-style-type: none;
+    margin-top: 20px;
+  }
+  
+  /* Estilos para el contenedor de detalles (puedes ajustar según tus necesidades) */
+  #detailsContainer {
+    margin-top: 20px;
+  }
+  
+  /* Estilos para los encabezados en el contenedor de detalles */
+  #detailsContainer h1 {
+    font-family: 'Montserrat', sans-serif;
+    text-align: justify;
+  }
+  
+  
 

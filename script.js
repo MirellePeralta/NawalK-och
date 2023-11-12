@@ -191,6 +191,7 @@ function displayDetails(details) {
             }
         });
     });
+
     function displayLinks(links) {
         const list = document.getElementById("linksList");
         list.innerHTML = ''; // Limpiar lista existente
@@ -217,10 +218,7 @@ function displayDetails(details) {
                 <p>Authors: ${detail[1].join(", ")}</p>
                 <p>Link: <a href="${detail[2]}" target="_blank">${detail[2]}</a></p>
                 <p>Description: ${detail[3]}</p>
-                <p>Text: ${detail[4]}</p>
-                <p>Sentiment (Description): ${detail[5]}</p>
-                <p>Sentiment (Title): ${detail[6]}</p>
-                <p>Sentiment (Text): ${detail[7]}</p>
+                <P>Result: ${detail[11]}</p>
             `;
             container.appendChild(detailDiv);
         });
