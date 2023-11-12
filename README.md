@@ -1,17 +1,25 @@
-# NawalKóoch: Protegiendo la Autenticidad Textil
+# Proyecto de Análisis de Sentimiento Político y Detección de Fiabilidad de Noticias
 
 ## Descripción del Proyecto
-NawalKóoch es una plataforma que utiliza inteligencia artificial para detectar coincidencias entre arte textil de las culturas indígenas en México y las imágenes de prendas producidas por las grandes industrias textiles. El objetivo principal es identificar posibles casos de plagio o apropiación cultural en la moda y la industria textil.
 
-## Características Principales:
-- **Análisis de Imágenes:** Utilizando algoritmos avanzados de visión por computadora, NawalKóoch compara patrones y diseños en prendas textiles con la rica tradición artesanal de las culturas indígenas mexicanas.
-- **Base de Datos Cultural:** La plataforma cuenta con una extensa base de datos que abarca arte textil auténtico de diversas comunidades indígenas, permitiendo una comparación precisa y sensible.
+Este proyecto tiene como objetivo utilizar inteligencia artificial para analizar el sentimiento político en tweets y evaluar la fiabilidad de las noticias relacionadas con este tema. Utiliza técnicas de procesamiento de lenguaje natural (NLP) para comprender la opinión y el tono en los tweets, así como para determinar la confiabilidad de las fuentes de noticias.
 
-- **Notificaciones de Posibles Apropiaciones:** Cuando se detecta una posible coincidencia, NawalKóoch notifica a los usuarios sobre la similitud y brinda información adicional para que la comunidad pueda evaluar y abordar la situación.
+## Características Principales
 
-## Objetivo:
-NawalKóoch tiene como objetivo fomentar la conciencia cultural y la protección del patrimonio textil indígena. Al identificar y destacar posibles casos de apropiación cultural, la plataforma busca promover un diálogo sobre la ética en la moda y trabajar hacia un respeto más profundo por las comunidades creativas que han influido en la riqueza del arte textil.
+- **Análisis de Sentimiento:**
+  - Detecta el sentimiento político en tweets.
+  - Utiliza modelos de NLP para comprender la actitud y tono expresados en los mensajes.
 
-## Contribuciones y Participación:
-¡Estamos abiertos a colaboraciones! Si te apasiona la preservación de la autenticidad cultural y la tecnología ética, ¡únete a nosotros en este viaje para proteger y celebrar el arte textil indígena!
+- **Detección de Fiabilidad de Noticias:**
+  - Evalúa la confiabilidad de las noticias relacionadas con temas políticos.
+  - Implementa algoritmos para analizar la credibilidad de las fuentes de noticias.
+
+## Tecnologías Utilizadas
+
+- Python
+- JavaScript
+- CSS
+- HTML
+- Modelos de inteligencia artificial preentrenados
+
 
