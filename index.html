@@ -3,15 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iniciar Sesión</title>
+    <title>Political Sentiment Analysis</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,200&display=swap" rel="stylesheet">
     
-
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
 </head>
 <body>
     <div class="container">
@@ -78,14 +76,30 @@
     </div>  
 
     <div id="result-container">
-      <table id="Selecciones">
-          <tr>
-            <th>Selecciones</th>
-              <!-- ...  <th>Acciones</th> ... -->
-          </tr>
-      </table>
+        <table id="Selecciones">
+            <div id="result-container">
+                <h2>News List</h2>
+                <table id="newsListTable">
+                    <tr>
+                        <th>Title</th>
+                    </tr>
+                    <!-- Los títulos de las noticias se mostrarán aquí -->
+                </table>
+            
+                <h2>Links</h2>
+                <ul id="linksList">
+                    <!-- Los enlaces de las noticias se mostrarán aquí -->
+                </ul>
+            
+                <h2>Details</h2>
+                <div id="detailsContainer">
+                    <!-- Los detalles de las noticias se mostrarán aquí -->
+                </div>
+            </div>
+            
+        </table>
     </div>
 
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
