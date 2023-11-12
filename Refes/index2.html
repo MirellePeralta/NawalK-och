@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Iniciar Sesión</title>
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,200&display=swap" rel="stylesheet">
+        
+    
+        <link rel="stylesheet" href="styles2.css">
+        <script src="script.js" defer></script>
+    </head>
+<body>
+    <section class="header">
+        <div class="logo">
+            <img src="/img/LGL.png" alt="Logo de la empresa" width="220" height="40">
+        </div>
+        <div class="login-button">
+            <a href="inicio.html">Iniciar Sesión</a>
+        </div>
+    </section>
+
+    <section class="imagen">
+        <img src="/img/Portada.png" alt="Imagen de fondo" width="100%" height="auto">
+    </section>
+
+    <section class="separacion"></section>
+
+    <section class="contenido">
+        <div class="texto">
+            
+            <p>
+            <style>
+                .texto {
+                    font-family: 'Montserrat Extra Light', sans-serif;
+                }
+            </style>
+            <h2>Acerca de Wise Stock</h2> Wise Stock es una innovadora empresa dedicada a simplificar la gestión de inventarios para microempresas. Fundada en 2023, nuestra misión es proporcionar soluciones prácticas y fáciles de usar que permitan a los propietarios de negocios concentrarse en lo que más importa: hacer crecer sus empresas.
+            
+            </p>
+            
+            <p> <h3>Nuestro Compromiso</h3> En Wise Stock, creemos en la simplicidad y la eficiencia. Nuestra plataforma intuitiva permite a los usuarios tener un control total sobre sus inventarios, facilitando la distribución entre múltiples sucursales de manera fluida y sin complicaciones.</p>
+            
+            <p> <h3>Características Destacadas</h3> Lo más importante es que Wise Stock podrá ofrecerte: </p>
+            <ol>
+                
+                <li>Distribución eficiente y rápida entre diferentes ubicaciones.</li>
+                <li>Administración completa del inventario en un solo lugar.</li>
+                <li>Interfaz intuitiva y fácil de usar, sin necesidad de conocimientos técnicos.</li>
+                <li>Soporte dedicado y asistencia técnica para garantizar una experiencia sin problemas.</li>
+            </ol>
+           
+            <p> <h3>Nuestro Equipo</h3> Nuestro equipo está formado por expertos en tecnología y gestión de inventarios, comprometidos a brindar soluciones que marquen la diferencia en el mundo de las microempresas.
+            </p>
+            
+        </div>
+
+        <div class="imagen2">
+            <img src="/img/Niñas2.jpg" alt="Descripción de la imagen" width="500" height="750">
+        </div>
+    </section>
+
+    <section class="separacion"></section>
+
+    <section class="galeria">
+        <div class="galeria-contenedor">
+            <img src="/ppt/1.png" alt="Imagen 1">
+            <img src="/ppt/2.png" alt="Imagen 2">
+            <img src="/ppt/3.png" alt="Imagen 3">
+            <img src="/ppt/4.png" alt="Imagen 4">
+            <img src="/ppt/5.png" alt="Imagen 5">
+            <img src="/ppt/6.png" alt="Imagen 6">
+            <img src="/ppt/7.png" alt="Imagen 7">
+            <img src="/ppt/8.png" alt="Imagen 8">
+            <img src="/ppt/9.png" alt="Imagen 9">
+            <img src="/ppt/10.png" alt="Imagen 10">
+        </div>
+        <button class="anterior" onclick="cambiarImagen(-1)" >
+            <img src="/ppt/atras.png" alt="Anterior">
+        </button>
+        <button class="siguiente" onclick="cambiarImagen(1)" >
+            <img src="/ppt/siguiente.png" alt="Siguiente">
+        </button>
+    </section>
+
+    <section class="separacion"></section>
+
+    <section class="contenido">
+        <div class="imagen3">
+            <img src="/img/CompuV.jpg" alt="Descripción de la imagen" width="500" height="750">
+        </div>
+
+        <div class="texto2">
+            
+            <style>
+                .texto2 {
+                    font-family: 'Montserrat Extra Light', sans-serif;
+                }
+            </style>
+            <h2>Beneficios Clave de Wise Stock</h2> 
+            
+            <p> <h3>1. Gestión Completa del Inventario</h3> Administra y supervisa tu inventario de manera eficiente y sin esfuerzo en un solo lugar, proporcionando un control total sobre tus existencias.
+            </p>
+           
+            <p> <h3>2. Distribución Eficiente entre Sucursales</h3> Transfiere productos entre múltiples ubicaciones de manera rápida y sencilla, optimizando la distribución para satisfacer la demanda en todas tus sucursales.
+            </p>
+
+            <p> <h3>3. Simplificación de Procesos</h3> Elimina la complejidad de la gestión de inventarios con una interfaz intuitiva y fácil de usar, lo que significa menos tiempo invertido en tareas administrativas y más en el crecimiento de tu negocio.
+            </p>
+
+            <p> <h3>4. Ahorro de Tiempo y Recursos</h3> Automatiza tareas rutinarias como seguimiento de existencias, reabastecimiento y actualizaciones de inventario, liberando tiempo valioso para enfocarte en estrategias de crecimiento.
+            </p>
+
+            <p> <h3>5. Soporte y Asistencia Dedicada</h3> Recibe un servicio de soporte técnico comprometido que te brindará ayuda y orientación cuando lo necesites, asegurando una experiencia sin problemas con Wise Stock.
+            </p>
+            
+        </div>
+
+    </section>
+
+    <section class="separacion"></section>
+
+    <section class="imagen5">
+        <img src="/img/Opiniones.png" alt="Imagen de fondo">
+    </section>
+
+    <section class="separacion"></section>
+
+    <section class="contenido">
+        <div class="new-container">
+            <form id="miFormulario">
+                <h1></h1><br>
+                <h1>Solicitud de Demostración</h1>
+    
+                <label for="nombre">Nombre:</label>
+                <input type="text" class="nuevo-input" id="nombre" name="nombre"><br>
+    
+                <label for="empresa">Empresa:</label>
+                <input type="text" class="nuevo-input" id="empresa" name="empresa"><br>
+                
+                <label for="email">Correo electrónico:</label>
+                <input type="email" class="nuevo-input" id="email" name="email"><br>
+        
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" class="nuevo-input" id="telefono" name="telefono">
+                
+                <input type="button" class="login-button" value="Enviar" id="btnEnviar">
+            </form>
+            
+        </div>
+
+        <div class="texto5">
+            <p>
+            <style>
+                .texto5 {
+                    font-family: 'Montserrat Extra Light', sans-serif;
+                }
+            </style>
+            <h2>¡Optimiza tu Gestión de Inventarios con Wise Stock!</h2> ¿Estás listo para transformar la forma en que gestionas tus existencias y potenciar el éxito de tu negocio? Wise Stock es la solución que estás buscando.</p>
+            <p> Con Wise Stock, obtendrás: </p>
+            <ol>
+                <li>Administración completa y eficiente de tu inventario.</li>
+                <li>Distribución ágil entre múltiples sucursales.</li>
+                <li>Informes en tiempo real para tomar decisiones estratégicas.</li>
+                <li>Soporte técnico dedicado para una experiencia sin complicaciones.</li>
+            </ol>
+            <p>Una vez recibamos tu solicitud, uno de nuestros representantes se pondrá en contacto contigo para agendar una demostración personalizada y responder cualquier pregunta que puedas tener.</p>
+            <p>No esperes más. ¡Da el primer paso hacia una gestión de inventarios más inteligente y rentable con Wise Stock!</p>
+            
+        </div>
+
+    </section>
+
+    <section class="separacion"></section>
+
+    <section class="imagen">
+        <img src="/img/Cierre.png" alt="Imagen de fondo" width="100%" height="auto">
+    </section>
+
+    <section class="footer">
+        <div class="left-content">
+            <p>
+                <style>
+                    .texto5 {
+                        font-family: 'Montserrat Extra Light', sans-serif;
+                    }
+                </style>
+                © 2023 Universidad Autónoma de Chihuahua. Todos los derechos reservados. Ninguna parte de este proyecto puede ser reproducida, distribuida o transmitida de ninguna forma o por ningún medio, incluidos medios electrónicos o mecánicos, sin el permiso previo por escrito de la Universidad Autónoma de Chihuahua.</p>
+            <p> Proyecto desarrollado por: Andrea Mirelle Peralta Ogaz & Carmen Andrea Meléndez Terrazas </p>
+        </div>
+
+        <div class="center-content">
+            <ul>
+                <li><a href="terminos_politicas.html">Política de Privacidad de Wise Stock</a></li>
+                <li><a href="terminos_politicas.html">Términos de Servicio de Wise Stock</a></li>
+                <li><a href="preguntas.html">Preguntas Frecuentes FAQs</a></li>
+            </ul>
+        </div>
+
+        <div class="right-content">
+                <a href="https://www.facebook.com/"><img src="/img/facebook.png" alt="Facebook"></a>
+                <a href="https://www.linkedin.com/"><img src="/img/linkedin.png" alt="LinkedIn"></a>
+                <a href="https://www.instagram.com/"><img src="/img/instagram.png" alt="Instagram"></a>
+                <p><a href="mailto:contacto@wisestock.tech"> contacto@wisestock.tech </a></p>
+        </div>
+    </section>
+
+
+
+
+    <!-- Resto del contenido de tu página -->
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="stylesb.css">
+</head>
+<body background="/img/fondo7.jpg">
+
+    <style>
+        body{
+            background-image: url(/img/fondo7.jpg);
+            background-repeat: repeat;
+            background-size: 1600px 1200px;
+        }
+    </style>
+
+    <div class="container">
+
+        <div class="image-section">
+            <img src="/img/OM-Moda.jpg" alt="Imagen de Bienvenida">
+            <button onclick="Comenzar()">
+                <img src="/img/Comenzar.png" alt="Volver">
+            </button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

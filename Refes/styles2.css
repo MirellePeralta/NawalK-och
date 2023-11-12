@@ -1,0 +1,465 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: large;
+}
+
+/* Estilo de la sección del encabezado */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff; /* Cambia este color según tus preferencias */
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    z-index: 2; /* Asegura que los botones estén sobre las imágenes */
+}
+
+/* Estilo del botón de inicio de sesión */
+.login-button a {
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #FF975E; /* Cambia este color según tus preferencias */
+    color: #fff;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+.login-button a:hover {
+    background-color: #FF7F55; /* Cambia este color según tus preferencias */
+}
+
+/* Estilo del logo */
+.logo img {
+    max-height: 10%;
+}
+
+/* Ubicación de la sección */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+/* Ubicación del botón de inicio de sesión */
+.login-button {
+    margin: 1.5cm;
+}
+
+/* Ubicación del logo */
+.logo {
+    margin: 1cm;
+    flex-shrink: 0;
+}
+
+/* Imagen */
+/* ... código anterior ... */
+
+.imagen {
+    width: 100%;
+    overflow: hidden;
+}
+
+.imagen img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ... Imagen ... */
+
+/* Separación entre secciones */
+.separacion {
+    height: 50px;
+    background-color: #ffffff; /* Puedes cambiar el color de fondo si lo deseas */
+}
+/* Separación entre secciones */
+
+/* Acerca de: */
+.contenido {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.texto {
+    width: calc(57% - 50px); /* El 10px es el espacio entre la imagen y el texto */
+    text-align: justify; /* Esta propiedad justificará el texto */
+    margin-left: 50px;
+    line-height: 2; /* Ajusta el valor según tus preferencias */
+    font-family: 'Montserrat', sans-serif; /* Establece Montserrat como la fuente principal */
+}
+
+.imagen2 img {
+    width: 500px;
+    height: 750px;
+    margin-right: 50px;
+}
+
+.texto h2 {
+    font-family: 'Montserrat Semi Bold', sans-serif;
+    color: #E54C4B; /* Cambia el color según tus preferencias */
+    margin: 0 !important/* Añade un espacio de 10px debajo de todos los párrafos */
+}
+
+.texto h3 {
+    font-family: 'Montserrat Semi Bold', sans-serif;
+    color: #F85C5E; /* Cambia el color según tus preferencias */
+    margin: 0 !important/* Añade un espacio de 10px debajo de todos los párrafos */
+}
+
+.texto p {
+    font-family: 'Montserrat Extra Light', sans-serif; /* Aplica Semi Bold a los subtítulos h3 */
+    font-weight: 400;
+}
+
+.texto li {
+    font-family: 'Montserrat Extra Light', sans-serif; /* Aplica Semi Bold a los subtítulos h3 */
+}
+/* Acerca de: */
+
+/* Diapositivas */
+.galeria {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.galeria-contenedor {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    height: auto; /* Esto mantiene la proporción de aspecto original de la imagen */
+}
+
+.galeria-contenedor img {
+    width: 1000px;
+    transition: transform 0.3s ease;
+}
+
+button.anterior, button.siguiente {
+    display: block;
+    position: absolute;
+    top: 1755px;
+    transform: translateY(-50%);
+    z-index: 1; /* Asegura que los botones estén sobre las imágenes */
+}
+
+button.anterior {
+    left: 195px; /* Ajusta la posición según tus necesidades */
+}
+
+button.siguiente {
+    right: 245px; /* Ajusta la posición según tus necesidades */
+}
+
+button.anterior, button.siguiente {
+    /* ... (código anterior) ... */
+    width: 1px; /* Ajusta el ancho de los botones según tus preferencias */
+    height: 1px; /* Ajusta el alto de los botones según tus preferencias */
+    background-color: #33333300; /* Cambia el color de fondo según tus preferencias */
+    color: #ffffff00; /* Cambia el color del texto según tus preferencias */
+    border: none; /* Quita el borde si no lo deseas */
+    font-size: 1px; /* Ajusta el tamaño del texto según tus preferencias */
+    font-weight: bold; /* Opcional: Ajusta el grosor del texto según tus preferencias */
+}
+
+button img {
+    width: 50px; /* Ajusta el ancho de la imagen según tus preferencias */
+    height: 600px; /* Ajusta el alto de la imagen según tus preferencias */
+}
+
+/* Diapositivas */
+
+/* Acerca de: */
+.contenido {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.texto2 {
+    width: calc(57% - 50px); /* El 10px es el espacio entre la imagen y el texto */
+    text-align: justify; /* Esta propiedad justificará el texto */
+    margin-right: 50px;
+    line-height: 2; /* Ajusta el valor según tus preferencias */
+    font-family: 'Montserrat', sans-serif; /* Establece Montserrat como la fuente principal */
+}
+
+.imagen3 img {
+    width: 500px;
+    height: 750px;
+    margin-left: 50px;
+}
+
+.texto2 h2 {
+    font-family: 'Montserrat Semi Bold', sans-serif;
+    color: #FF965E; /* Cambia el color según tus preferencias */
+    margin: 0 !important/* Añade un espacio de 10px debajo de todos los párrafos */
+}
+
+.texto2 h3 {
+    font-family: 'Montserrat Semi Bold', sans-serif;
+    color: #FFA951; /* Cambia el color según tus preferencias */
+    margin: 0 !important/* Añade un espacio de 10px debajo de todos los párrafos */
+}
+
+.texto2 p {
+    font-family: 'Montserrat Extra Light', sans-serif; /* Aplica Semi Bold a los subtítulos h3 */
+    font-weight: 400;
+}
+
+.texto2 li {
+    font-family: 'Montserrat Extra Light', sans-serif; /* Aplica Semi Bold a los subtítulos h3 */
+}
+/* Acerca de: */
+
+.imagen5 {
+    overflow: hidden;
+}
+
+.imagen5 img {
+    width: 1350px;
+    height: auto;
+    display: block;
+    margin-left: 2cm;
+    margin-right: 2cm;
+}
+
+/* -------------  Demo --------------- */
+.new-container {
+    width: 475px;
+    height: 550px;
+    margin-top: 20px;
+    margin-left: 50px; /* Esto centra el contenedor horizontalmente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fdf7f4; /* Fondo blanco semitransparente */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 10px; /* Esquinas redondeadas */
+    padding: 10px; /* Espaciado interno */
+}
+
+
+.nuevo-input {
+    background-color:  #ffd0b7;
+    border: 5px solid #ffd0b7;
+    border-radius: 5px;
+    margin: 10px;
+    width: 350px; /* Ajusta el ancho según tus preferencias */
+    padding: 8px; /* Ajusta el relleno (padding) según tus preferencias */
+}
+
+
+label {
+    font-size: 15px; /* Cambia el tamaño de la fuente */
+    display: block; /* Hace que la etiqueta aparezca en una nueva línea */
+    margin-bottom: 0px; /* Añade un espacio entre la etiqueta y el campo de entrada */
+    text-align: left; /* Alinea el texto de la etiqueta a la izquierda */
+    padding-left: 40px; /* Añade una sangría de 10 píxeles en el lado izquierdo */
+}
+
+input {
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #FF975E; /* Cambia este color según tus preferencias */
+    color: #ffffff;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+input:hover {
+    background-color: #ffbe9b; /* Cambia este color según tus preferencias */; /* Cambia este color según tus preferencias */
+}
+
+button{
+    background-color: rgba(255, 4, 88, 0);
+}
+
+.texto5 {
+    width: calc(57% - 50px); /* El 10px es el espacio entre la imagen y el texto */
+    text-align: justify; /* Esta propiedad justificará el texto */
+    margin-right: 50px;
+    line-height: 2; /* Ajusta el valor según tus preferencias */
+    font-family: 'Montserrat', sans-serif; /* Establece Montserrat como la fuente principal */
+}
+
+.texto5 h2 {
+    font-family: 'Montserrat Semi Bold', sans-serif;
+    color: #FF965E; /* Cambia el color según tus preferencias */
+    margin: 0 !important/* Añade un espacio de 10px debajo de todos los párrafos */
+}
+
+.texto5 h3 {
+    font-family: 'Montserrat Semi Bold', sans-serif;
+    color: #FFA951; /* Cambia el color según tus preferencias */
+    margin: 0 !important/* Añade un espacio de 10px debajo de todos los párrafos */
+}
+
+.texto5 p {
+    font-family: 'Montserrat Extra Light', sans-serif; /* Aplica Semi Bold a los subtítulos h3 */
+    font-weight: 400;
+}
+
+.texto5 li {
+    font-family: 'Montserrat Extra Light', sans-serif; /* Aplica Semi Bold a los subtítulos h3 */
+}
+/* ---------------------------- */
+
+/* Pie de página */
+/* Estilo para la sección del footer */
+.footer {
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    background-color: #FF7F55; /* Cambia el color de fondo según tu diseño */
+    font-family: 'Montserrat Extra Light', sans-serif; /* Establece Montserrat como la fuente principal */
+    text-align: justify; /* Esta propiedad justificará el texto */
+    line-height: 2; /* Ajusta el valor según tus preferencias */
+    color: #fff; /* Cambia el color del texto según tus preferencias */
+    font-size: 15px;
+}
+
+/* Estilo para el contenido de la izquierda (65%) */
+.left-content {
+    flex: 70%; /* Toma el 65% del espacio disponible */
+    padding: 20px; /* Añade espaciado alrededor del contenido */
+    margin-left: 50px;
+}
+
+/* Estilo para el contenido de la derecha (35%) */
+.center-content {
+    flex: 20%; /* Toma el 35% del espacio disponible */
+    padding: 20px; /* Añade espaciado alrededor del contenido */
+}
+
+/* Estilo para el contenido de la derecha (35%) */
+.right-content {
+    flex: 10%; /* Toma el 35% del espacio disponible */
+    padding: 20px; /* Añade espaciado alrededor del contenido */
+    margin-right: 50px;
+}
+
+/* Estilo para la lista de enlaces en la derecha */
+.center-content ul {
+    list-style: none; /* Elimina los marcadores de lista */
+    padding: 0; /* Elimina el espaciado predeterminado de la lista */
+}
+
+/* Estilo para los enlaces */
+.center-content ul li a {
+    text-decoration: none; /* Elimina la subraya de los enlaces */
+    color: #fdd2ba; /* Cambia el color del texto de los enlaces */
+    display: block; /* Hace que los enlaces ocupen todo el ancho disponible */
+    margin-bottom: 5px; /* Espaciado entre los enlaces */
+    font-size: 15px;
+}
+
+.right-content img {
+    width: 50px; /* Establece el ancho del icono */
+    height: 50px; /* Permite que la altura se ajuste automáticamente para mantener la proporción */
+    margin-top: 20px;
+    margin-left: 3px;
+    margin-bottom: 5px;
+}
+
+/* Estilo para el enlace de contacto por correo */
+.right-content p a {
+    text-decoration: none; /* Elimina la subraya del enlace */
+    color: #fdd2ba; /* Cambia el color del texto del enlace */
+    display: block; /* Hace que los enlaces ocupen todo el ancho disponible */
+    margin-bottom: 0px; /* Espaciado entre los enlaces */
+    font-size: 15px;
+}
+
+.texto, .texto2 {
+    margin-top: 0;
+}
+
+/* ______________ */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: large;
+}
+
+.login-container {
+    width: 350px;
+    height: 300px;
+    margin: 200px auto;
+    background-color: rgba(255, 255, 255, 0.705); /* Fondo blanco semitransparente */
+    border-radius: 10px; /* Esquinas redondeadas */
+    padding: 20px; /* Espaciado interno */
+    text-align: center;
+}
+
+input {
+    background-color:  rgb(200, 238, 254);
+    border: 7px solid rgb(200, 238, 254);
+    border-radius: 10px;
+    margin: 10px;
+    width: 300px; /* Ajusta el ancho según tus preferencias */
+    padding: 8px; /* Ajusta el relleno (padding) según tus preferencias */
+}
+
+button {
+    background-color: rgba(72, 195, 248, 0);
+    border-radius: 10px; /* Redondea el botón */
+    font-size: 15px; /* Aumenta el tamaño del texto */
+    margin: 10px;
+    color: rgba(255, 255, 255, 0); /* Color del texto */
+    font-family: 'Montserrat', sans-serif;
+    border: 10px solid rgba(72, 195, 248, 0);
+}
+
+label {
+    font-size: 15px; /* Cambia el tamaño de la fuente */
+    display: block; /* Hace que la etiqueta aparezca en una nueva línea */
+    margin-bottom: 0px; /* Añade un espacio entre la etiqueta y el campo de entrada */
+    text-align: left; /* Alinea el texto de la etiqueta a la izquierda */
+    padding-left: 10px; /* Añade una sangría de 10 píxeles en el lado izquierdo */
+}
+
+.container {
+    display: flex;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px; /* Esquinas redondeadas */
+    justify-content: center;
+    align-items: center;
+    margin-left: 5cm;
+    margin-right: 5cm;
+    margin-top: 1cm;
+    margin-bottom: 1cm;
+}
+
+.image-section {
+    position: relative;
+    display: inline-block; /* Asegura que el contenedor se ajuste al tamaño de la imagen */
+}
+
+.image-section button {
+    position: absolute;
+    bottom: 70px;
+    right: 45px;
+    width: 150px; /* Ancho del botón */
+    height: 75px; /* Altura del botón */
+}
+
+
+.image-section, .login-section {
+    flex: 1;
+    padding: 20px;
+}
+
+.image-section img {
+    max-width: 100%;
+    height: auto;
+}
