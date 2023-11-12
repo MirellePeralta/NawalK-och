@@ -2,7 +2,7 @@ async function getSentimentAndArticles() {
     const selectedCandidate = document.getElementById("candidates").value;
     
     // Simulate making a POST request to the API
-    const apiResponse = await fetch('URL_DE_TU_API', {
+    const apiResponse = await fetch('http://127.0.0.1:8000/docs#/default/get_all_news_data_get_all_news_data__get', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -17,8 +17,8 @@ async function getSentimentAndArticles() {
   async function enviarCandidato(candidates) {
     try {
         // Verificar si el candidato seleccionado es "Samuel"
-        if (candidates === "Samuel") {
-            const respuesta = await fetch('https://sheet.best/api/sheets/932a8537-6abe-41b2-b640-fd784aeb21e3', {
+        if (candidates === "Samuel_Garcia") {
+            const respuesta = await fetch('http://127.0.0.1:8000/docs#/default/get_all_news_data_get_all_news_data__get', {
                 method: 'POST',
                 mode: 'cors',
                 headers: {
@@ -32,8 +32,8 @@ async function getSentimentAndArticles() {
             const contenido = await respuesta.json();
             console.log(contenido);
         } 
-        else if (candidates === "Claudia") {
-            const respuesta = await fetch('https://sheet.best/api/sheets/932a8537-6abe-41b2-b640-fd784aeb21e3', {
+        else if (candidates === "Claudia_Sheinbaum") {
+            const respuesta = await fetch('http://127.0.0.1:8000/docs#/default/get_all_news_data_get_all_news_data__get', {
                 method: 'POST',
                 mode: 'cors',
                 headers: {
@@ -47,8 +47,8 @@ async function getSentimentAndArticles() {
             const contenido = await respuesta.json();
             console.log(contenido);
         }
-        else if (candidates === "Xochitl") {
-            const respuesta = await fetch('https://sheet.best/api/sheets/932a8537-6abe-41b2-b640-fd784aeb21e3', {
+        else if (candidates === "Xochitl_Galvez") {
+            const respuesta = await fetch('http://127.0.0.1:8000/docs#/default/get_all_news_data_get_all_news_data__get', {
                 method: 'POST',
                 mode: 'cors',
                 headers: {
@@ -68,46 +68,128 @@ async function getSentimentAndArticles() {
 }
 
     async function getSentimentAndArticles() {
-        const selectedCandidate = document.getElementById("candidates").value;
-        await enviarCandidato(selectedCandidate);
-    
+        const selectedCandidate = document.getElementById("candidates").value.replace(" ", "_");
+        
         try {
-            // Realiza una solicitud para obtener la información de la hoja de cálculo
-            const sheetResponse = await fetch('https://sheet.best/api/sheets/932a8537-6abe-41b2-b640-fd784aeb21e3', {
+            const apiResponse = await fetch(`http://127.0.0.1:8000/get-all-news-data/?query=${selectedCandidate}`, {
                 method: 'GET',
-                mode: 'cors',
                 headers: {
-                    'Content-Type': 'application/json'
+                    'Content-Type': 'application/json',
                 }
             });
-    
-            const sheetData = await sheetResponse.json();
-            
-            // Llena la tabla en el contenedor result-container con los datos obtenidos de la hoja de cálculo
-            llenarTabla(sheetData);
+
+            const responseData = await apiResponse.json();
+            displayResults(responseData);
         } catch (error) {
-            console.log(error);
+            console.error("Error al obtener los datos: ", error);
         }
     }
-    
-    function llenarTabla(data) {
-        const seleccionesTable = document.getElementById("Selecciones");
-    
-        // Limpiar la tabla antes de agregar nuevos datos
-        seleccionesTable.innerHTML = `
-            <tr>
-                <th>Selecciones</th>
-            </tr>
+
+function displayResults(data) {
+    displayNewsList(data.news_list);
+    displayLinks(data.links);
+    displayDetails(data.details);
+}
+
+function displayNewsList(newsList) {
+    const table = document.getElementById("newsListTable");
+    table.innerHTML = '<tr><th>Title</th></tr>'; // Resetear y establecer encabezado de la tabla
+
+    newsList.forEach(item => {
+        const row = table.insertRow(-1);
+        const titleCell = row.insertCell(0);
+        titleCell.innerHTML = item.title;
+    });
+}
+
+function displayLinks(links) {
+    const list = document.getElementById("linksList");
+    list.innerHTML = ''; // Limpiar lista existente
+
+    links.forEach(link => {
+        const listItem = document.createElement("li");
+        const linkElement = document.createElement("a");
+        linkElement.href = link;
+        linkElement.textContent = link;
+        linkElement.target = "_blank"; // Abrir en una nueva pestaña
+        listItem.appendChild(linkElement);
+        list.appendChild(listItem);
+    });
+}
+
+function displayDetails(details) {
+    const container = document.getElementById("detailsContainer");
+    container.innerHTML = ''; // Limpiar contenido existente
+
+    details.forEach(detail => {
+        const detailDiv = document.createElement("div");
+        detailDiv.innerHTML = `
+            <h3>${detail[0]}</h3>
+            <p>Authors: ${detail[1].join(", ")}</p>
+            <p>Link: <a href="${detail[2]}" target="_blank">${detail[2]}</a></p>
+            <p>Description: ${detail[3]}</p>
+            <p>Text: ${detail[4]}</p>
+            <p>Sentiment (Description): ${detail[5]}</p>
+            <p>Sentiment (Title): ${detail[6]}</p>
+            <p>Sentiment (Text): ${detail[7]}</p>
         `;
-    
-        // Iterar sobre los datos y agregar filas a la tabla
-        data.forEach(item => {
-            const newRow = seleccionesTable.insertRow(-1);
-    
-            const cellSeleccion = newRow.insertCell(0);
-    
-            // Agregar la información correspondiente a la celda
-            cellSeleccion.innerHTML = item.Solicitudes;
+        container.appendChild(detailDiv);
+    });
+}
+    function displayResults(data) {
+        displayNewsList(data.news_list);
+        displayLinks(data.links);
+        displayDetails(data.details);
+    }
+
+    function displayNewsList(newsList) {
+        const table = document.getElementById("newsListTable");
+        table.innerHTML = '<tr><th>Title</th></tr>'; // Resetear y establecer encabezado de la tabla
+
+        newsList.forEach(item => {
+            const row = table.insertRow(-1);
+            const titleCell = row.insertCell(0);
+            titleCell.innerHTML = item.title;
         });
     }
+
+    function displayLinks(links) {
+        const list = document.getElementById("linksList");
+        list.innerHTML = ''; // Limpiar lista existente
+
+        links.forEach(link => {
+            const listItem = document.createElement("li");
+            const linkElement = document.createElement("a");
+            linkElement.href = link;
+            linkElement.textContent = link;
+            linkElement.target = "_blank"; // Abrir en una nueva pestaña
+            listItem.appendChild(linkElement);
+            list.appendChild(listItem);
+        });
+    }
+
+    function displayDetails(details) {
+        const container = document.getElementById("detailsContainer");
+        container.innerHTML = ''; // Limpiar contenido existente
+
+        details.forEach(detail => {
+            const detailDiv = document.createElement("div");
+            detailDiv.innerHTML = `
+                <h3>${detail[0]}</h3>
+                <p>Authors: ${detail[1].join(", ")}</p>
+                <p>Link: <a href="${detail[2]}" target="_blank">${detail[2]}</a></p>
+                <p>Description: ${detail[3]}</p>
+                <p>Text: ${detail[4]}</p>
+                <p>Sentiment (Description): ${detail[5]}</p>
+                <p>Sentiment (Title): ${detail[6]}</p>
+                <p>Sentiment (Text): ${detail[7]}</p>
+            `;
+            container.appendChild(detailDiv);
+        });
+    }
+
+
+
+// Asegúrate de llamar a getSentimentAndArticles en respuesta a algún evento, como un botón presionado
+
     
