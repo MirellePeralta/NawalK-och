@@ -14,23 +14,76 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    <div>
-        <h1>Political Sentiment Analysis</h1> 
-        <label for="candidates">Choose a candidate:</label>
-        <select id="candidates">
-            <option value="Claudia">Claudia</option>
-            <option value="Samuel">Samuel</option>
-            <option value="Xochitl">Xochitl</option>
-        </select>
-        <button onclick="getSentimentAndArticles()">Get Sentiment and Articles</button>
+    <div class="container">
+      <div class="image-section">
+        <img src="img/PortadaP.png" alt="Imagen de Bienvenida">
+          <select id="candidates" name="candidates">
+              <option value="None">Candidatos a la Presidencia de la Reública en los Estados Unidos Mexicanos</option>
+              <option value="Claudia_Sheinbaum">Claudia Sheinbaum Pardo</option>
+              <option value="Samuel_Garcia">Samuel Alejadro García Sepúlveda</option>
+              <option value="Xochitl_Galvez">Bertha Xochitl Galvéz Ruiz</option>
+          </select>
+        <button onclick="getSentimentAndArticles()">
+          <img src="img/search.png">
+        </button>
+        <button class="ini-button" onclick="" style="width: 80px; height: 50px;">
+          <img src="img/Loguito.png">
+      </button>      
+      </div>
     </div>
+
+    <div id="Claudia_Sheinbaum" class="Claudia_Sheinbaum section">
+      <!-- Otros elementos relacionados con Samuel -->
+      <img src="img/Claudia.png" alt="Claudia de Biografia">
+      <button class="conoce3" onclick="window.location.href= 'https://jefaturadegobierno.cdmx.gob.mx/comunicacion/nota/destaca-claudia-sheinbaum-importancia-de-mantener-principios-de-la-transformacion-de-mexico' ">Conoce más sobre Claudia</button>
+      <div class="img-button3">
+        <button onclick="window.location.href='https://www.instagram.com/claudia_shein/'">
+          <img src="img/Instagram.png" alt="Instagram">
+        </button>
+        <button onclick="window.location.href='https://twitter.com/Claudiasheins'">
+          <img src="img/twitter(1).png" alt="twitter">
+        </button>
+      </div>
+      <img src="img/Clau.png" alt="Claudia de Propuesta">
+    </div>  
+
+    <div id="Samuel_Garcia" class="Samuel_Garcia section">
+      <!-- Otros elementos relacionados con Samuel -->
+      <img src="img/Samuel_Bio.png" alt="Samuel de Biografia">
+      <button class="conoce" onclick="window.location.href= 'https://www.nl.gob.mx/gobernador/samuel-alejandro-garcia-sepulveda' ">Conoce más sobre Samuel</button>
+      <div class="img-button">
+        <button onclick="window.location.href='https://www.instagram.com/samuelgarcias/'">
+          <img src="img/Instagram.png" alt="Instagram">
+        </button>
+        <button onclick="window.location.href='https://twitter.com/samuel_garcias'">
+          <img src="img/twitter(1).png" alt="twitter">
+        </button>
+      </div>
+      <img src="img/Samu.png" alt="Samuel de Propuesta">
+    </div>    
+
+    <div id="Xochitl_Galvez" class="Xochitl_Galvez section">
+      <!-- Otros elementos relacionados con Samuel -->
+      <img src="img/Xochitl.png" alt="Xochitl de Biografia">
+      <button class="conoce2" onclick="window.location.href= 'https://www.senado.gob.mx/65/senador/1262' ">Conoce más sobre Xochitl</button>
+      <div class="img-button2">
+        <button onclick="window.location.href='https://www.instagram.com/xochitlgalvez/'">
+          <img src="img/Instagram.png" alt="Instagram">
+        </button>
+        <button onclick="window.location.href='https://twitter.com/XochitlGalvez'">
+          <img src="img/twitter(1).png" alt="twitter">
+        </button>
+      </div>
+      <img src="img/Xochi.png" alt="Xochitl de Propuesta">
+    </div>  
+
     <div id="result-container">
-        <table id="Selecciones">
-            <tr>
-                <th>Selecciones</th>
-                <!-- ...  <th>Acciones</th> ... -->
-            </tr>
-        </table>
+      <table id="Selecciones">
+          <tr>
+            <th>Selecciones</th>
+              <!-- ...  <th>Acciones</th> ... -->
+          </tr>
+      </table>
     </div>
 
   <script src="script.js"></script>

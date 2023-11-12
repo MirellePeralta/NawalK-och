@@ -5,79 +5,246 @@ body {
     font-size: large;
   }
   
-  /* Estilo de la sección del encabezado */
-  .header {
+  
+  
+  .container {
     display: flex;
-    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 0px; /* Esquinas redondeadas */
+    justify-content: center;
     align-items: center;
-    background-color: #ffffff; /* Cambia este color según tus preferencias */
-    width: 100%;
-    height: 50px;
-    padding: 10px;
-    z-index: 2; /* Asegura que los botones estén sobre las imágenes */
-  }
-  
-  /* Estilo del botón de inicio de sesión */
-  .login-button a {
-    text-decoration: none;
-    padding: 10px 20px;
-    background-color: #FF975E; /* Cambia este color según tus preferencias */
-    color: #fff;
-    border-radius: 10px;
-    font-size: 15px;
-  }
-  
-  .login-button a:hover {
-    background-color: #FF7F55; /* Cambia este color según tus preferencias */
-  }
-  
-  /* Estilo del logo */
-  .logo img {
-    max-height: 10%;
-  }
-  
-  /* Ubicación de la sección */
-  .header {
-    position: fixed;
-    top: 0;
-    left: 0;
-  }
-  
-  /* Ubicación del botón de inicio de sesión */
-  .login-button {
-    margin: 1.5cm;
-  }
-  
-  /* Ubicación del logo */
-  .logo {
-    margin: 1cm;
-    flex-shrink: 0;
-  }
-  
-/* Imagen */
-.imagen {
+}
+
+.image-section {
     position: relative;
-    width: 100%;
-    overflow: hidden;
-  }
-  
-  .imagen img {
-    width: 100%;
+    display: inline-block; /* Asegura que el contenedor se ajuste al tamaño de la imagen */
+}
+
+.image-section button {
+    position: absolute;
+    bottom: 185px;
+    right: 457px;
+    width: 40px; /* Ancho del botón */
+    height: 40px; /* Altura del botón */
+}
+
+.image-section select {
+    position: absolute;
+    bottom: 187px;
+    right: 500px;
+    width: 550px; /* Ancho del botón */
+    height: 38px; /* Altura del botón */
+    border-radius: 8px;
+}
+
+
+.image-section {
+    flex: 1;
+    padding: 20px;
+}
+
+.image-section img {
+    max-width: 100%;
     height: auto;
-    display: block;
+}
+
+button {
+    background-color: rgba(72, 195, 248, 0);
+    color: rgba(255, 255, 255, 0); /* Color del texto */
+    border: 0px solid rgba(72, 195, 248, 0);
+}
+
+#result-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* O ajusta la altura según sea necesario */
   }
+
+  .Samuel_Garcia {
+    position: relative;
+    display: inline-block; /* Asegura que el contenedor se ajuste al tamaño de la imagen */
+}
+
+.Samuel_Garcia img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilos para el contenedor de Samuel_Garcia */
+  #Samuel_Garcia {
+    position: relative;
+    display: flex;
+    align-items: center; /* Centra verticalmente los elementos */
+    justify-content: center; /* Centra horizontalmente los elementos */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan cuando no hay suficiente espacio */
+  }
+
   
-  .imagen #candidates {
+  /* Estilos para el botón "Conoce más" */
+  .conoce {
     position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
+    top: 630px; /* Posición vertical al 50% del contenedor */
+    left: 680px; /* Posición horizontal al 50% del contenedor */
+    transform: translate(-50%, -50%); /* Centrar el botón exactamente en el centro */
+    padding: 15px 30px;
+    font-size: 20px;
+    background-color: #EA861E;
+    color: #fff;
+    border: 2px solid #EA861E;
+    border-radius: 15px;
+    text-align: center;
+    margin-right: 10px; /* Espaciado entre el botón y el contenido de la derecha */
   }
   
-  .imagen button {
+  .conoce:hover {
+    background-color: #9a5002;
+    border-color: #9a5002;
+  }
+
+
+  /* Estilos para el botón con la imagen de Instagram */
+  .img-button {
     position: absolute;
-    top: 500px; /* Puedes ajustar esta posición según sea necesario */
-    left: 0;
-    z-index: 1;
+    top: 605px; /* Posición vertical al 50% del contenedor */
+    left: 850px; /* Posición horizontal al 50% del contenedor */
+    display: inline-block;
+    vertical-align: middle;
   }
   
+  .img-button img {
+    width: 55px;
+    height: 55px;
+    border: none;
+    cursor: pointer;
+  }
+  
+
+  .Xochitl_Galvez {
+    position: relative;
+    display: inline-block; /* Asegura que el contenedor se ajuste al tamaño de la imagen */
+    }
+
+    .Xochitl_Galvez img {
+        max-width: 100%;
+        height: auto;
+    }
+
+  #Xochitl_Galvez {
+    position: relative;
+    display: flex;
+    align-items: center; /* Centra verticalmente los elementos */
+    justify-content: center; /* Centra horizontalmente los elementos */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan cuando no hay suficiente espacio */
+  }
+
+    /* Estilos para el botón "Conoce más" */
+    .conoce2 {
+        position: absolute;
+        top: 780px; /* Posición vertical al 50% del contenedor */
+        left: 680px; /* Posición horizontal al 50% del contenedor */
+        transform: translate(-50%, -50%); /* Centrar el botón exactamente en el centro */
+        padding: 15px 30px;
+        font-size: 20px;
+        background-color: #EA861E;
+        color: #fff;
+        border: 2px solid #EA861E;
+        border-radius: 15px;
+        text-align: center;
+        margin-right: 10px; /* Espaciado entre el botón y el contenido de la derecha */
+      }
+      
+      .conoce2:hover {
+        background-color: #9a5002;
+        border-color: #9a5002;
+      }
+    
+    
+      /* Estilos para el botón con la imagen de Instagram */
+      .img-button2 {
+        position: absolute;
+        top: 755px; /* Posición vertical al 50% del contenedor */
+        left: 850px; /* Posición horizontal al 50% del contenedor */
+        display: inline-block;
+        vertical-align: middle;
+      }
+      
+      .img-button2 img {
+        width: 55px;
+        height: 55px;
+        border: none;
+        cursor: pointer;
+      }
+
+      .Claudia_Sheinbaum {
+        position: relative;
+        display: inline-block; /* Asegura que el contenedor se ajuste al tamaño de la imagen */
+        }
+    
+        .Claudia_Sheinbaum img {
+            max-width: 100%;
+            height: auto;
+        }
+    
+      #Claudia_Sheinbaum {
+        position: relative;
+        display: flex;
+        align-items: center; /* Centra verticalmente los elementos */
+        justify-content: center; /* Centra horizontalmente los elementos */
+        flex-wrap: wrap; /* Permite que los elementos se envuelvan cuando no hay suficiente espacio */
+      }
+    
+        /* Estilos para el botón "Conoce más" */
+        .conoce3 {
+            position: absolute;
+            top: 780px; /* Posición vertical al 50% del contenedor */
+            left: 680px; /* Posición horizontal al 50% del contenedor */
+            transform: translate(-50%, -50%); /* Centrar el botón exactamente en el centro */
+            padding: 15px 30px;
+            font-size: 20px;
+            background-color: #EA861E;
+            color: #fff;
+            border: 2px solid #EA861E;
+            border-radius: 15px;
+            text-align: center;
+            margin-right: 10px; /* Espaciado entre el botón y el contenido de la derecha */
+          }
+          
+          .conoce3:hover {
+            background-color: #9a5002;
+            border-color: #9a5002;
+          }
+        
+        
+          /* Estilos para el botón con la imagen de Instagram */
+          .img-button3 {
+            position: absolute;
+            top: 755px; /* Posición vertical al 50% del contenedor */
+            left: 850px; /* Posición horizontal al 50% del contenedor */
+            display: inline-block;
+            vertical-align: middle;
+          }
+          
+          .img-button3 img {
+            width: 55px;
+            height: 55px;
+            border: none;
+            cursor: pointer;
+          }
+      
+                /* Estilos para el botón con la imagen de Instagram */
+      .ini-button {
+        position: absolute;
+        top: 30px; /* Posición vertical al 50% del contenedor */
+        left: 30px; /* Posición horizontal al 50% del contenedor */
+        vertical-align: middle;
+      }
+      
+      .ini-button img {
+        border: none;
+        cursor: pointer;
+      }
+
+

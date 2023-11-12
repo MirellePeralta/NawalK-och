@@ -17,7 +17,7 @@ async function getSentimentAndArticles() {
   async function enviarCandidato(candidates) {
     try {
         // Verificar si el candidato seleccionado es "Samuel"
-        if (candidates === "Samuel") {
+        if (candidates === "Samuel_Garcia") {
             const respuesta = await fetch('https://sheet.best/api/sheets/932a8537-6abe-41b2-b640-fd784aeb21e3', {
                 method: 'POST',
                 mode: 'cors',
@@ -32,7 +32,7 @@ async function getSentimentAndArticles() {
             const contenido = await respuesta.json();
             console.log(contenido);
         } 
-        else if (candidates === "Claudia") {
+        else if (candidates === "Claudia Sheinbaum") {
             const respuesta = await fetch('https://sheet.best/api/sheets/932a8537-6abe-41b2-b640-fd784aeb21e3', {
                 method: 'POST',
                 mode: 'cors',
@@ -47,7 +47,7 @@ async function getSentimentAndArticles() {
             const contenido = await respuesta.json();
             console.log(contenido);
         }
-        else if (candidates === "Xochitl") {
+        else if (candidates === "Xochitl Galvez") {
             const respuesta = await fetch('https://sheet.best/api/sheets/932a8537-6abe-41b2-b640-fd784aeb21e3', {
                 method: 'POST',
                 mode: 'cors',
@@ -110,4 +110,44 @@ async function getSentimentAndArticles() {
             cellSeleccion.innerHTML = item.Solicitudes;
         });
     }
+
+    document.addEventListener('DOMContentLoaded', function() {
+        const Samuel_GarciaDiv = document.querySelector('.Samuel_Garcia');
+        Samuel_GarciaDiv.style.display = 'none';  // Oculta la sección inicialmente
+    
+        document.getElementById('candidates').addEventListener('change', function() {
+            if (this.value === 'Samuel_Garcia') {
+                Samuel_GarciaDiv.style.display = 'block';
+            } else {
+                Samuel_GarciaDiv.style.display = 'none';
+            }
+        });
+    });
+
+    document.addEventListener('DOMContentLoaded', function() {
+        const Samuel_GarciaDiv = document.querySelector('.Claudia_Sheinbaum');
+        Samuel_GarciaDiv.style.display = 'none';  // Oculta la sección inicialmente
+    
+        document.getElementById('candidates').addEventListener('change', function() {
+            if (this.value === 'Claudia_Sheinbaum') {
+                Samuel_GarciaDiv.style.display = 'block';
+            } else {
+                Samuel_GarciaDiv.style.display = 'none';
+            }
+        });
+    });
+
+    document.addEventListener('DOMContentLoaded', function() {
+        const Samuel_GarciaDiv = document.querySelector('.Xochitl_Galvez');
+        Samuel_GarciaDiv.style.display = 'none';  // Oculta la sección inicialmente
+    
+        document.getElementById('candidates').addEventListener('change', function() {
+            if (this.value === 'Xochitl_Galvez') {
+                Samuel_GarciaDiv.style.display = 'block';
+            } else {
+                Samuel_GarciaDiv.style.display = 'none';
+            }
+        });
+    });
+
     

@@ -418,13 +418,6 @@ button {
     border: 10px solid rgba(72, 195, 248, 0);
 }
 
-label {
-    font-size: 15px; /* Cambia el tamaño de la fuente */
-    display: block; /* Hace que la etiqueta aparezca en una nueva línea */
-    margin-bottom: 0px; /* Añade un espacio entre la etiqueta y el campo de entrada */
-    text-align: left; /* Alinea el texto de la etiqueta a la izquierda */
-    padding-left: 10px; /* Añade una sangría de 10 píxeles en el lado izquierdo */
-}
 
 .container {
     display: flex;
@@ -462,4 +455,18 @@ label {
 .image-section img {
     max-width: 100%;
     height: auto;
+}
+
+.RESULTcontainer {
+    display: flex;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px; /* Esquinas redondeadas */
+    justify-content: center;
+    align-items: center;
+    margin-left: 5cm;
+    margin-right: 5cm;
+    margin-top: 1cm;
+    margin-bottom: 1cm;
 }
