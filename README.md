@@ -2,7 +2,7 @@
 
 ## Descripción del Proyecto
 
-Este proyecto tiene como objetivo utilizar inteligencia artificial para analizar el sentimiento político en tweets y evaluar la fiabilidad de las noticias relacionadas con este tema. Utiliza técnicas de procesamiento de lenguaje natural (NLP) para comprender la opinión y el tono en los tweets, así como para determinar la confiabilidad de las fuentes de noticias.
+Este proyecto tiene como objetivo utilizar inteligencia artificial para analizar el sentimiento político en tweets y evaluar la fiabilidad de las noticias en periódicos digitales relacionadas con este tema. Utiliza técnicas de procesamiento de lenguaje natural (NLP) para comprender la opinión y el tono en los tweets, así como para determinar la confiabilidad de las fuentes de noticias.
 
 ## Características Principales
 
