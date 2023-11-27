@@ -20,7 +20,5 @@ Este proyecto tiene como objetivo utilizar inteligencia artificial para analizar
 - JavaScript
 - CSS
 - HTML
-- Modelos de inteligencia artificial preentrenados
+- Modelos Preentrenados de Inteligencia Artificial 
 
-### Link a la Demostración: 
-https://gtj2xnsj-5500.usw3.devtunnels.ms/
